@@ -8,8 +8,6 @@ def get_fresh_incidents(token, time_from):
     Запрос списка новых инцидентов из MaxPatrol VM / SIEM.
     """ 
     logging.info("Запуск модуля get_fresh_incidents()")
-    
-    # ИСПРАВЛЕНО: Добавлен обязательный слэш '/' на конце URL, как в рабочем коде
     url = f"{mpvm_base_url}/api/v2/incidents/" 
     
     # Payload полностью скопирован из гарантированно рабочего репозитория
