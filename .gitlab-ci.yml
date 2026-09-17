@@ -7,8 +7,8 @@ deploy_to_server:
     - Deploy-srv-isd-auto
   script:
     # 1. Синхронизируем чистый код, полностью исключая и служебный .git, и локальный venv с .env
-    - sudo -u isd-automation /usr/bin/mkdir -p /opt/mpsiem-trueconf-notification
-    - sudo -u isd-automation /usr/bin/rsync -rlptD --delete --chmod=D775,F664 --exclude='.git' --exclude='.env' --exclude='venv' ./ /opt/mpsiem-trueconf-notification/
+    - sudo -u *** /usr/bin/mkdir -p /opt/mpsiem-trueconf-notification
+    - sudo -u *** /usr/bin/rsync -rlptD --delete --chmod=D775,F664 --exclude='.git' --exclude='.env' --exclude='venv' ./ /opt/mpsiem-trueconf-notification/
     
     # 2. Переходим в рабочую папку и управляем окружением отдельно
     - cd /opt/mpsiem-trueconf-notification
