@@ -1,0 +1,4 @@
+.env
+last_incident_time.txt
+__pycache__/
+*.py
